@@ -1,0 +1,2 @@
+notes|pdf --template ~/.pandoc/notes.latex --highlight-style tango --filter pandoc-crossref
+test|latex --template ~/.pandoc/notes.latex --no-highlight --filter ~/.pandoc/minted.py
