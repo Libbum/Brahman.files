@@ -1,0 +1,10 @@
+pcm.testsetup {
+        type hw
+        card 0
+        device 1
+hint {
+        show on
+        description "My Soundcard with extra Volume Control"
+     }
+}
+
