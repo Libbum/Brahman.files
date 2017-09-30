@@ -12,6 +12,7 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'wincent/command-t', { 'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make' }
 
 " Syntax
+Plug 'ElmCast/elm-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'lervag/vimtex'
 Plug 'vim-pandoc/vim-pandoc-syntax'

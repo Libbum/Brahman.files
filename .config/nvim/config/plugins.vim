@@ -33,3 +33,7 @@ let g:vimtex_view_general_options_latexmk = '--unique'
 let b:pandoc_command_autoexec_command = ':Pandoc #notes'
 " dont overwrite my keys kthx
 let g:pandoc#keyboard#display_motions = 0
+
+" elm
+" We disable the polyglot values in favour of elm-vim
+let g:polyglot_disabled = ['elm']
