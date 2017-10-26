@@ -5,6 +5,10 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
 
 # merge in defaults and keymaps
 
@@ -32,6 +36,7 @@ fi
 
 # start some nice programs
 
+
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
   [ -x "$f" ] && . "$f"
@@ -39,5 +44,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-setxkbmap workman && xset r 66 && setxkbmap -option compose:menu
+# setxkbmap workman && xset r 66 && setxkbmap -option compose:menu
 
