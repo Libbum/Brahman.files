@@ -36,9 +36,20 @@ export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 #Noti pushbullet setup
 source ~/.config/noti
 
+#fzf setup to use rg as default
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules,elm-stuff}/*" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="cd ~/; bfs -type d -nohidden | sed s/^\./~/"
+#\C-p is bound to nvim $(fzf) in .inputrc, but may not be functioning correctly
+
 #This minimises system calls https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
 export TZ=:/etc/localtime
 
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+export XIM_PROGRAM=/usr/bin/ibus-daemon
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -62,3 +73,5 @@ else
    export EDITOR='nvim'
 fi
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

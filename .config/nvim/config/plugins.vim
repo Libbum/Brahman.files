@@ -37,3 +37,12 @@ let g:pandoc#keyboard#display_motions = 0
 " elm
 " We disable the polyglot values in favour of elm-vim
 let g:polyglot_disabled = ['elm']
+
+" fzf
+" use ripgrep for fuzzy search. We respect the .gitignore for this one
+let g:rg_command = '
+  \ rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always"
+  \ -g "*.{js,json,elm,md,rs,html,css,py,cpp,c,yaml,hs,tex,conf}"
+  \ -g "!{.git,node_modules,vendor,elm-stuff}/*" '
+
+command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
