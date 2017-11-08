@@ -60,6 +60,9 @@ nnoremap <Leader>bd :bd!<CR>
 " new buffer/tab
 nnoremap <Leader>e :enew<CR>
 
+"fzf
+nnoremap <Leader>t :Files<CR>
+
 " neomake
 nmap <Leader><Space>o :lopen<CR>
 nmap <Leader><Space>c :lclose<CR>
