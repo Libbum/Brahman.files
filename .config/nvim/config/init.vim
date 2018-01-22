@@ -11,7 +11,6 @@ Plug 'neomake/neomake'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-surround'
 
 " Syntax
 Plug 'ElmCast/elm-vim'

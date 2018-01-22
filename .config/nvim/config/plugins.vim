@@ -43,6 +43,6 @@ let g:polyglot_disabled = ['elm']
 let g:rg_command = '
   \ rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always"
   \ -g "*.{js,json,elm,md,rs,html,css,py,cpp,c,yaml,hs,tex,conf}"
-  \ -g "!{.git,.vagrant,target,node_modules,vendor,elm-stuff}/*" '
+  \ -g "!{.git,.vagrant,target,deps,node_modules,vendor,elm-stuff}/*" '
 
 command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
