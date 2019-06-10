@@ -12,8 +12,12 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" Language server
+Plug 'w0rp/ale'
+Plug 'antew/vim-elm-language-server'
+
 " Syntax
-Plug 'ElmCast/elm-vim'
+" Plug 'ElmCast/elm-vim' -- Needs to update to 0.19, don't see that happening any time soon.
 Plug 'sheerun/vim-polyglot'
 Plug 'lervag/vimtex'
 Plug 'vim-pandoc/vim-pandoc-syntax'

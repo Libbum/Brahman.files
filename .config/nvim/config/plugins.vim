@@ -36,7 +36,7 @@ let g:pandoc#keyboard#display_motions = 0
 
 " elm
 " We disable the polyglot values in favour of elm-vim
-let g:polyglot_disabled = ['elm']
+" let g:polyglot_disabled = ['elm']
 
 " fzf
 " use ripgrep for fuzzy search. We respect the .gitignore for this one
