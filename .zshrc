@@ -27,6 +27,9 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export SSH_ASKPASS="/usr/bin/ksshaskpass"
 
+export PYTHON=/usr/bin/python2
+export JUPYTER=/usr/bin/jupyter
+export GOPATH=/home/tim/repos/go
 #export CC=/opt/intel/composerxe/linux/bin/intel64/icc
 #export CXX=/opt/intel/composerxe/linux/bin/intel64/icpc
 #source /opt/intel/composerxe/linux/mkl/bin/mklvars.sh intel64
@@ -56,11 +59,10 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 plugins=(git common-aliases sudo)
 
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="$HOME/.cargo/bin:$HOME/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-path+=(/usr/local/texlive/2016/bin/x86_64-linux)
-path+=(/home/tim/.cargo/bin)
+path+=(/usr/local/texlive/2018/bin/x86_64-linux)
 path+=(/home/tim/.gem/ruby/2.3.0/bin)
 export PATH
 
