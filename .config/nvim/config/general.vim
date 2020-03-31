@@ -13,6 +13,10 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
+" GAMS syntax is done manually
+autocmd BufNewFile,BufRead *.gms setf gams
+
+
 " FYI this is how you can override color scheme options if needed.
 "if (has("autocmd") && !has("gui"))
   "let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
