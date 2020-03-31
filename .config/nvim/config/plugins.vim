@@ -29,6 +29,13 @@ let g:vimtex_view_general_viewer = 'okular'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_view_general_options_latexmk = '--unique'
 
+
+" JuliaFormatter
+" normal mode mapping
+nnoremap <localleader>jf :<C-u>call JuliaFormatter#Format(0)<CR>
+" visual mode mapping
+vnoremap <localleader>jf :<C-u>call JuliaFormatter#Format(1)<CR>
+
 " pandoc
 let b:pandoc_command_autoexec_command = ':Pandoc #notes'
 " dont overwrite my keys kthx

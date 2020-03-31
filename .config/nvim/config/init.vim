@@ -22,6 +22,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'lervag/vimtex'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
+" Formatting
+Plug 'kdheepak/JuliaFormatter.vim'
+
 " Eyecandy
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
